@@ -10,3 +10,10 @@ sparcs['sparcs_los'].value_counts()
 sparcs.drop('Length of Stay', axis=1, inplace=True)
 sparcs.columns
 
+# jsut get values from sparcs_los
+sparcs_los = sparcs['sparcs_los'].values
+
+# convert array to list
+list1 = ['1', '2', '3', '4', '5']
+list2 = ['a', 'b', 'c', 'd', 'e']
+dataframe = pd.DataFrame({'col1': list1, 'col2': list2})
